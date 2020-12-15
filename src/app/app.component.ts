@@ -9,6 +9,7 @@ import {Subscription} from "rxjs";
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit, OnDestroy {
+
   title = 'todoList';
   todoList: Task[] = [];
   sub: Subscription = new Subscription;
@@ -20,11 +21,6 @@ export class AppComponent implements OnInit, OnDestroy {
 
   ngOnInit(): void {
     this.sub = this.data.stream$.subscribe(tasks => this.todoList = tasks);
-    this.data.getTasks();
-  }
-
-  ngOnDestroy(): void {
-    this.sub.unsubscribe();
   }
 
   deleteSelected() {
@@ -39,5 +35,9 @@ export class AppComponent implements OnInit, OnDestroy {
       this.data.addNewTask(text);
       this.textTask = '';
     }
+  }
+
+  ngOnDestroy(): void {
+    this.sub.unsubscribe();
   }
 }

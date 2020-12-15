@@ -7,7 +7,7 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
 import {TaskComponent} from './components/task/task.component';
 import {FormsModule} from "@angular/forms";
-import { DialogComponent } from './components/dialog/dialog.component';
+import {DialogComponent} from './components/dialog/dialog.component';
 import {MatDividerModule} from '@angular/material/divider';
 
 @NgModule({
