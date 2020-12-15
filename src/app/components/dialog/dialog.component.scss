@@ -12,13 +12,13 @@
 .dialog-div {
   position: fixed;
   top: 50%;
-  margin-top: -100px;
+  margin-top: -10rem;
   left: 50%;
-  margin-left: -200px;
-  width: 400px;
+  margin-left: -175px;
+  max-width: 350px;
   padding: 20px;
   background-color: aliceblue;
-  border-radius: 15px;
+  border-radius: 10px;
   z-index: 101;
   animation: move 0.75s;
 
