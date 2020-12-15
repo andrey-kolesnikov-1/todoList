@@ -1,7 +1,8 @@
 <div class="task" (click)="toggleCompleted()">
-  <mat-icon *ngIf="task.completed; else completed">check_circle_outline</mat-icon>
+  <mat-icon *ngIf="task.completed; else completed">task_alt</mat-icon>
   <ng-template #completed>
     <mat-icon>panorama_fish_eye</mat-icon>
   </ng-template>
   <span [ngStyle]="{'fontStyle': task.completed? 'italic' : 'initial'}">{{task.task}}</span>
 </div>
+
