@@ -1,0 +1,47 @@
+
+.card {
+  margin: 3rem auto 0;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  font-size: 15px;
+
+  button {
+    &:focus {
+      outline: none;
+    }
+  }
+
+  .card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 10px;
+    height: 40px;
+
+    span {
+      font-weight: 600;
+      color: #0000007a;
+    }
+
+    button {
+      margin-right: -10px;
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+
+  .tasks {
+    padding: 10px 2px;
+    height: 350px;
+    overflow: auto;
+
+    p {
+      text-align: center;
+    }
+  }
+
+  .create_new_task {
+    display: flex;
+    padding: 5px 15px 5px 5px;
+  }
+}

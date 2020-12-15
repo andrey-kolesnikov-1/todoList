@@ -1,0 +1,10 @@
+<div [ngClass]="{close_background: close, 'background-div': true}" (click)="closeDialog()"></div>
+
+<div [ngClass]="{close_content: close, 'dialog-div': true}">
+  <h1>Ошибка!</h1>
+  <mat-divider></mat-divider>
+  <p>Описание задачи не должно быть пустым, либо содержать меньше трех значащих символов.</p>
+  <div class="btn_div">
+    <button class="btn_agree" mat-raised-button color="primary" (click)="closeDialog()">Закрыть</button>
+  </div>
+</div>

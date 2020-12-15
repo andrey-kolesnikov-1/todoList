@@ -1,0 +1,16 @@
+.task {
+  display: flex;
+  cursor: pointer;
+  padding: 5px;
+  margin-bottom: 5px;
+  border-radius: 3px;
+  transition: background-color 0.2s;
+
+  &:hover {
+    background-color: #e8e8e8;
+  }
+
+  span {
+    margin-left: 1.5rem;
+  }
+}
